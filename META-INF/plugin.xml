@@ -1,0 +1,47 @@
+<idea-plugin version="2">
+  <id>com.kgmyshin.ideaplugin.eventbus3</id>
+  <name>EventBus3 Intellij Plugin</name>
+  <version>1.0</version>
+  <vendor email="kgmyshin82@gmail.com" url="https://github.com/kgmyshin/eventbus3-intellij-plugin">eventbus3-intellij-plugin</vendor>
+
+  <description><![CDATA[
+    Provides actions which allow you quickly move around the event bus.
+    <ul>
+      <li><code>EventBus.post</code> to <code>@Subscribe</code> or <code>onEventMainThread</code></li>
+      <li><code>@Subscribe</code> to <code>EventBus.post</code></li>
+    </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First version released.
+    ]]>
+  </change-notes>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="135.000"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <codeInsight.lineMarkerProvider language="JAVA"
+                                    implementationClass="com.kgmyshin.ideaplugin.eventbus3.EventBus3LineMarkerProvider"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
