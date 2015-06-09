@@ -2,13 +2,22 @@
 
 Plugin to navigate between events posted by [EventBus](https://github.com/greenrobot/EventBus).
 
-### Post to `@Subscrive` and `@Subscrive` to Post
+### `Post` to `@Subscribe` and `@Subscribe` to `Post`
 
 ![](https://raw.githubusercontent.com/kgmyshin/eventbus3-intellij-plugin/master/art/cap.gif)
 
 ## Download
 
-[Download](https://github.com/kgmyshin/eventbus3-intellij-plugin/raw/master/eventbus3-intellij-plugin.jar) the plugin jar and select "Install Plugin From Disk" in IntelliJ's plugin preferences.
+
+
+## Install
+
+There are two ways.
+
+- Preference -> Plugins -> Browse `EventBus` -> Select `EventBus3 Intellij Plugin` -> push Install plugin Btn.
+
+- [Download](https://github.com/kgmyshin/eventbus3-intellij-plugin/raw/master/eventbus3-intellij-plugin.jar) the plugin jar and select "Install Plugin From Disk" in IntelliJ's plugin preferences.
+
 
 ## License 
 
